@@ -1,0 +1,176 @@
+/* -------------------------------------------------- */
+/* INTERSECTION OBSERVER
+/* -------------------------------------------------- */
+
+// OPTIONS
+$io-options: (
+	background-color: $white,
+	duration: 400ms, // Set the duration of the animation.
+	delay: 0, // Delay the animation by this amount. 
+	ease: $easeWipe // Set the easing type for this animation.
+);
+
+
+// COPY
+.io {
+
+	$self: &;
+
+	&-headline {
+
+		@extend .fix-font-render;
+		position: relative;
+		//font-kerning: none;
+		word-wrap: break-word;
+
+		.split-text {
+
+			@include transition(
+				$property: (filter),
+				$duration: map-get($io-options, duration),
+				$delay: map-get($io-options, delay),
+				$ease: map-get($io-options, ease),
+				$optimize: true
+			);
+			overflow: hidden;
+			filter: blur(6px);
+
+			&#{$self}-headline-reveal {
+				filter: blur(0);			
+			}
+
+		}
+
+		.headline-subtitle {
+
+			position: relative;
+
+			/*
+			@include transition(
+					$property: (transform),
+					$duration: map-get($io-options, duration),
+					$delay: map-get($io-options, delay),
+					$ease: map-get($io-options, ease),
+					$optimize: true
+			);
+			*/
+
+			&::before {
+				@include transition(
+					$property: (transform),
+					$duration: map-get($io-options, duration),
+					$delay: map-get($io-options, delay),
+					$ease: map-get($io-options, ease),
+					$optimize: true
+				);
+				content: '';
+				z-index: 1;
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: $black;
+				transform: scale3d(1,1,1);
+				transform-origin: left center;
+				will-change: transform;
+			}
+
+			&#{$self}-headline-reveal {
+
+				&::before {
+					transform: scale3d(0,1,1);
+					transform-origin: right center;
+				}
+
+			}
+
+		}
+
+	}
+
+	&-copy {
+
+		@extend .fix-font-render;
+		position: relative;
+		//font-kerning: none;
+		word-wrap: break-word;
+
+		.split-text {
+
+			@include transition(
+				$property: (filter),
+				$duration: map-get($io-options, duration),
+				$delay: map-get($io-options, delay),
+				$ease: map-get($io-options, ease),
+				$optimize: true
+			);
+			filter: blur(4px);
+
+			&#{$self}-copy-reveal {
+				filter: blur(0);			
+			}
+
+		}
+
+	}
+
+	&-list {
+
+		li {
+
+			@include transition(
+					$property: (color, border, background, box-shadow, transform, filter),
+					$duration: map-get($io-options, duration),
+					$delay: map-get($io-options, delay),
+					$ease: map-get($io-options, ease),
+					$optimize: true
+			);
+			//color: $black;
+			filter: blur(4px);
+
+			&#{$self}-list-reveal {
+				color: $white;
+				filter: blur(0);
+			}
+
+		}
+
+	}
+
+	&-button {
+
+		&::before {
+			@include transition(
+				$property: (transform),
+				$duration: map-get($io-options, duration) * 2,
+				$delay: map-get($io-options, delay),
+				$ease: map-get($io-options, ease),
+				$optimize: true
+			);
+			content: '';
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: map-get($io-options, background-color);
+			transform: scale3d(1,1,1);
+			transform-origin: top center;
+			will-change: transform;
+		}
+
+		&-reveal {
+
+			&::before {
+				transform: scale3d(1,0,1);
+				transform-origin: bottom center;
+			}
+
+		}
+
+	}
+
+}

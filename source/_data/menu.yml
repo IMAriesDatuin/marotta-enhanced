@@ -1,0 +1,82 @@
+
+# CONTENT
+content:
+ -
+  id: 'home'
+  title: 'Home'
+  description: ''
+  image-src: 'assets/placeholder/bear.jpg'
+  webp: 'assets/placeholder/bear.webp'
+  link: '#'
+
+
+ -
+  id: 'face'
+  title: 'Face'
+  description: ''
+  image-src: 'assets/placeholder/leopard.jpg'
+  webp: 'assets/placeholder/leopard.webp'
+  link: '#'
+
+
+ -
+  id: 'body'
+  title: 'Body'
+  description: ''
+  image-src: 'assets/placeholder/lion.jpg'
+  webp: 'assets/placeholder/lion.webp'
+  link: '#'
+
+
+ -
+  id: 'skin'
+  title: 'Skin'
+  description: ''
+  image-src: 'assets/placeholder/tiger.jpg'
+  webp: 'assets/placeholder/tiger.webp'
+  link: '#'
+
+
+ -
+  id: 'hair'
+  title: 'Hair'
+  description: ''
+  image-src: 'assets/placeholder/bear.jpg'
+  webp: 'assets/placeholder/tiger.webp'
+  link: '#'
+
+
+ -
+  id: 'who-we-are'
+  title: 'Who We Are'
+  description: ''
+  image-src: 'assets/placeholder/leopard.jpg'
+  webp: 'assets/placeholder/bear.webp'
+  link: '#'
+
+
+ -
+  id: 'patient-resources'
+  title: 'Patient Resources'
+  description: ''
+  image-src: 'assets/placeholder/lion.jpg'
+  webp: 'assets/placeholder/leopard.webp'
+  link: '#'
+
+
+ -
+  id: 'gallery'
+  title: 'Gallery'
+  description: ''
+  image-src: 'assets/placeholder/lion.jpg'
+  webp: 'assets/placeholder/leopard.webp'
+  link: '#'
+
+
+ -
+  id: 'shop'
+  title: 'Shop'
+  description: ''
+  image-src: 'assets/placeholder/lion.jpg'
+  webp: 'assets/placeholder/leopard.webp'
+  link: '#'
