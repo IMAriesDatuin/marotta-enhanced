@@ -45,7 +45,7 @@ var onScroll = (function onScroll($, window, document, undefined) {
 		_this.property_defaults =
 		{
 			'opacity' : 1,
-			'blur' : 0,
+			//'blur' : 0,
 			'translatex' : 0,
 			'translatey' : 0,
 			'translatez' : 0,
@@ -307,7 +307,7 @@ var onScroll = (function onScroll($, window, document, undefined) {
 					// Get new value for each property
 
 					var opacity    = _this.animate_value( scroll , scroll_eased , from , to , effect , 'opacity' );
-					var blur    = _this.animate_value( scroll , scroll_eased , from , to , effect , 'blur' );
+					//var blur    = _this.animate_value( scroll , scroll_eased , from , to , effect , 'blur' );
 					var translatey = _this.animate_value( scroll , scroll_eased , from , to , effect , 'translatey' );
 					var translatex = _this.animate_value( scroll , scroll_eased , from , to , effect , 'translatex' );
 					var translatez = _this.animate_value( scroll , scroll_eased , from , to , effect , 'translatez' );
@@ -332,9 +332,10 @@ var onScroll = (function onScroll($, window, document, undefined) {
 					effect.element.css(
 					{
 						'opacity' : opacity,
-						'filter' : 'blur( '+blur+'px)',
-						'transform' : 'translate3d( '+translatex+'rem , '+translatey+'rem , '+translatez+'rem ) rotateX( '+rotatex+'deg ) rotateY( '+rotatey+'deg ) rotateZ( '+rotatez+'deg ) scale3d( '+scalex+' , '+scaley+' , '+scalez+' )',
-						'will-change' : 'opacity, transform, filter'
+						//'filter' : 'blur( '+blur+'px)',
+						'transform' : 'translate3d( '+translatex+'px , '+translatey+'px , '+translatez+'px ) rotateX( '+rotatex+'deg ) rotateY( '+rotatey+'deg ) rotateZ( '+rotatez+'deg ) scale3d( '+scalex+' , '+scaley+' , '+scalez+' )',
+						'backface-visibility' : 'hidden',
+						'will-change' : 'opacity, transform'
 					} );
 				}
 			}
@@ -372,7 +373,7 @@ var onScroll = (function onScroll($, window, document, undefined) {
 			switch( property )
 			{
 				case 'opacity'    : new_value = new_value.toFixed(2); break;
-				case 'blur'    : new_value = new_value.toFixed(2); break;
+				//case 'blur'    : new_value = new_value.toFixed(2); break;
 				case 'filter'    : new_value = new_value.toFixed(0); break;
 				case 'translatex' : new_value = new_value.toFixed(0); break;
 				case 'translatey' : new_value = new_value.toFixed(0); break;
@@ -463,7 +464,14 @@ var onScroll = (function onScroll($, window, document, undefined) {
 		// ----------------------------------------------------------------------------------------------------
 		// Bind initialisation
 
-		$(document).ready(function(){ _this.init(); });
+		window.addEventListener('load', function() {
+
+			_this.init();
+
+		});		
+
+		//$(document).ready(function(){ _this.init(); });
+
 
 		// ----------------------------------------------------------------------------------------------------
 

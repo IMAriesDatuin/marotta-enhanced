@@ -181,7 +181,6 @@ $nav-panel-options: (
 					//background: map-get($quotes-options, background-color);
 					transform: scale3d(1,1,1);
 					transform-origin: left center;
-					will-change: transform;
 				}
 
 				&:last-child::before {

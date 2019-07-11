@@ -175,7 +175,7 @@ $testimonials-carousel-options: (
 			$duration: 400ms,
 			$delay: 0,
 			$ease: $easeNatural,
-			$optimize: true
+			$optimize: false
 		);
 		//pointer-events: none;
 		opacity: 1;
@@ -268,7 +268,7 @@ $testimonials-carousel-options: (
 				$duration: 200ms,
 				$delay: 0,
 				$ease: $easeNatural,
-				$optimize: true
+				$optimize: false
 			);
 			opacity: 1;
 			overflow: visible;
@@ -293,7 +293,7 @@ $testimonials-carousel-options: (
 					$duration: 200ms,
 					$delay: 0,
 					$ease: $easeNatural,
-					$optimize: true
+					$optimize: false
 				);
 				content: '';
 				z-index: 1;

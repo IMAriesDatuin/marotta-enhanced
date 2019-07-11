@@ -18,7 +18,7 @@ $block-cap-options: (
 		$duration: map-get($block-cap-options, duration),
 		$delay: map-get($block-cap-options, delay),
 		$ease: map-get($block-cap-options, ease),
-		$optimize: true
+		$optimize: false
 	);
 	pointer-events: none;
 	display: block;

@@ -4,10 +4,9 @@
 
 // OPTIONS
 $quotes-options: (
-	background-color: $white,
-	duration: 600ms, // Set the duration of the animation.
-	delay: 0, // Delay the animation by this amount. 
-	ease: $easeWipe // Set the easing type for this animation.
+	duration: 600ms,
+	delay: 0,
+	ease: $easeWipe
 );
 
 
@@ -61,7 +60,7 @@ $quotes-options: (
 				top: 0.5rem;
 				bottom: 0.5rem;
 			};
-			filter: blur(2px);
+			filter: blur(4px);
 
 			&-reveal {
 				filter: blur(0);

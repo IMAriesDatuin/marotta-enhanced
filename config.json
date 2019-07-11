@@ -317,7 +317,8 @@
 						"_core/lodash.js",
 
 						"_core/lazyload.js",
-						"_core/on-scroll/on-scroll.js",
+						"_core/laxxx.js",
+						">>_core/on-scroll/on-scroll.js",
 						">>_core/smoothscroll.js",
 
 						"_core/print.js",

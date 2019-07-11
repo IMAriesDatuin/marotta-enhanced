@@ -19,7 +19,7 @@ $blocker-options: (
 		$duration: map-get($blocker-options, duration),
 		$delay: map-get($blocker-options, delay),
 		$ease: map-get($blocker-options, ease),
-		$optimize: true
+		$optimize: false
 	);
 	cursor: default;
 	pointer-events: none;

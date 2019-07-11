@@ -60,8 +60,8 @@ var io = (function reveal($, window, document, undefined) {
 
 
 					  // SUBTITLE
-					  .fromTo($(element).find('.io-headline').find('.headline-subtitle'), 2, {autoAlpha: 0, y: 25},
-																							 {autoAlpha: 1, y: 0, ease: Expo.easeOut}, 'group-01+=0.25')
+					  .fromTo($(element).find('.io-headline').find('.headline-subtitle'), 2, {autoAlpha: 0},
+																							 {autoAlpha: 1, ease: Expo.easeOut}, 'group-01+=0.25')
 
 
 					  // REVERT TEXT
@@ -87,8 +87,8 @@ var io = (function reveal($, window, document, undefined) {
 					tl
 
 					  // DEFAULT
-					  .staggerFromTo($mySplitText, 2, {autoAlpha: 0, y: 25, className: '-=io-copy-reveal'},
-													  {autoAlpha: 1, y: 0, className: '+=io-copy-reveal', ease: Expo.easeOut}, 0.075, 'group-01')
+					  .staggerFromTo($mySplitText, 2, {autoAlpha: 0, className: '-=io-copy-reveal'},
+													  {autoAlpha: 1, className: '+=io-copy-reveal', ease: Expo.easeOut}, 0.075, 'group-01')
 
 
 					  // REVERT TEXT
@@ -99,8 +99,8 @@ var io = (function reveal($, window, document, undefined) {
 
 			}
 
-			Tween.fromTo($(element).find('p').not('.io-copy'), 2, {autoAlpha: 0, y: 25, className: '-=io-copy-reveal'},
-																  {autoAlpha: 1, y: 0, className: '+=io-copy-reveal', delay: 1.5, ease: Expo.easeOut});
+			Tween.fromTo($(element).find('p').not('.io-copy'), 2, {autoAlpha: 0, className: '-=io-copy-reveal'},
+																  {autoAlpha: 1, className: '+=io-copy-reveal', delay: 1.5, ease: Expo.easeOut});
 
 		}
 

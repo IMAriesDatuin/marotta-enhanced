@@ -28,7 +28,7 @@ $component-options: (
 		$duration: map-get($component-options, duration),
 		$delay: map-get($component-options, duration),
 		$ease: map-get($component-options, ease),
-		$optimize: true
+		$optimize: false
 	);
 
 	#{$self}-element {

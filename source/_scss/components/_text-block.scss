@@ -4,7 +4,7 @@
 
 // OPTIONS
 $text-block-options: (
-	duration: 600ms,
+	duration: 250ms,
 	delay: 0,
 	ease: $easeNatural
 );
@@ -25,19 +25,16 @@ $text-block-options: (
 	//mix-blend-mode: lighten;
 
 	> h1 {
-		//position: relative;
 		//margin-bottom: 1rem;
 		padding: 0;
 		text-transform: uppercase;
-		word-wrap: normal;
+		//word-wrap: normal;
 		transform-origin: right center;
 	}
 
 	> p {
 
 		padding: 0;
-		//font-size: 1.25em;
-		//text-align: justify;
 		white-space: normal;
 
 		&:not(:first-child):not(:last-child) {

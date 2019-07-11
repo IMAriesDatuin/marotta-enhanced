@@ -6,7 +6,7 @@
 $scroll-progress-options: (
 	opacity: 0.7, // Set the transparency of the main cursor and cursor trail.
 	size: 1px, // Set the size of the main cursor. The cursor trail will double its size accordingly.
-	direction: top,
+	direction: bottom,
 	blend-mode: color-dodge, // Set the blend-mode when interacting with elements: color, color-burn, color-dodge, exclusion, darken, hue, lighten, luminosity, normal, hard-light, multiply, overlay, saturation, screen, soft-light
 	duration: 400ms, // Set the duration of the animation.
 	delay: 400ms, // Delay the animation by this amount. 

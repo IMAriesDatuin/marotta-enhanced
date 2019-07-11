@@ -64,6 +64,7 @@ var modules = (function modules($, window, document, undefined) {
 		headroom.init();
 		io.init();
 		lazyLoad.init();
+		onScroll.init();
 		pageVisibility.init();
 		print.init();
 		randomProps.position();
@@ -73,7 +74,7 @@ var modules = (function modules($, window, document, undefined) {
 		//tilt.init();
 		//water.init();
 
-		Tween.delayedCall(interval.delay, onScroll.init);
+		//Tween.delayedCall(interval.delay, onScroll.init);
 
 
 		/* -------------------------------------------------- */
@@ -106,6 +107,11 @@ var modules = (function modules($, window, document, undefined) {
 		if(isTouch) {
 			touchFeedback.init();
 			waves.init();
+		}
+
+
+		if(!isMobileScreen) {
+			//Tween.delayedCall(interval.delay, onScroll.init);
 		}
 
 	}

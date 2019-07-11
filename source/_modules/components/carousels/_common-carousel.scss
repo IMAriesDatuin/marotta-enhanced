@@ -19,7 +19,7 @@ $carousel-options: (
 		$duration: 200ms,
 		$delay: 800ms,
 		$ease: $easeNatural,
-		$optimize: true
+		$optimize: false
 	);
 	opacity: 0;
 	visibility: hidden;
@@ -58,7 +58,7 @@ $carousel-options: (
 			$duration: map-get($carousel-options, duration),
 			$delay: map-get($carousel-options, delay),
 			$ease: map-get($carousel-options, ease),
-			$optimize: true
+			$optimize: false
 		);
 		content: '';
 		z-index: 1;
@@ -80,7 +80,7 @@ $carousel-options: (
 			$duration: map-get($carousel-options, duration),
 			$delay: map-get($carousel-options, delay),
 			$ease: $easeNatural,
-			$optimize: true
+			$optimize: false
 		);
 		opacity: 0;
 		//min-width: 150px;

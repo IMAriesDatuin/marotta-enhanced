@@ -75,6 +75,7 @@ main {
 			//left: map-get(map-get($section, padding), left);
 		}
 		width: 100%;
+		height: auto;
 		background: $section-background;
 
 		&:not(.no-width) {

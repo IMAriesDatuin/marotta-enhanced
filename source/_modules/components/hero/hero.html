@@ -1,6 +1,6 @@
 
 <!-- CONTENT: HERO -->
-<section id="hero" class="hero grid-x align-middle align-center on-scroll no-gutter no-width no-selection on-scroll" role="banner">
+<section id="hero" class="hero grid-x align-middle align-center on-scroll no-gutter no-width no-selection" role="banner">
 
 
 	<!-- CONTENT -->
@@ -87,12 +87,12 @@
 
 
 	<!-- OVERLAY -->
-	<span class="hero-overlay"></span>
+	<span class="hero-overlay lax" data-lax-opacity="0 0.5, vh 1 | loop=0 offset=0 speed=1" data-lax-anchor="self"></span>
 	<!-- // OVERLAY -->
 
 
 	<!-- VIDEO -->
-	<div class="hero-media lazy on-scroll-animate" data-when="exit" data-from="0" data-to="0.5" data-opacity="0.1" data-easing="easeout">
+	<div class="hero-media lazy">
 
 		<video data-src="{{ root }}{{ assets }}placeholder/video.mp4" class="fit lazy-load" loop muted playsinline autoplay="true" data-object-fit="cover" data-object-position="center center" tabindex="0">
 			<source type="video/mp4" data-src="{{ root }}{{ assets }}placeholder/video.mp4"/>

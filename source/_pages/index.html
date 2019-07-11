@@ -16,8 +16,8 @@ assets: assets/
 
 
 
-<!-- SECTION: WELCOME -->
-<section id="welcome" class="spacing-top-none hide-mobile-both">
+<!-- SECTION: HUB -->
+<section id="welcome" class="spacing-top-none hide-mobile-both z-1">
 
 
 	<!-- GRID -->
@@ -45,7 +45,7 @@ assets: assets/
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_763831048.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_763831048.jpg" class="motion-blur-up lazy-load" alt="Learn more about our services and procedures so we can find the right treatment for your concerns.">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_763831048.jpg" class="motion-blur-up lazy-load lax" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self" alt="Learn more about our services and procedures so we can find the right treatment for your concerns.">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -78,7 +78,7 @@ assets: assets/
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_549726082.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_549726082.jpg" class="motion-blur-up lazy-load" alt="Relax, recover, refine your body and mind.">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_549726082.jpg" class="motion-blur-up lazy-load lax" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self" alt="Relax, recover, refine your body and mind.">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -111,7 +111,7 @@ assets: assets/
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1380371102.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1380371102.jpg" class="motion-blur-up lazy-load" alt="Treat yourself or your friends and family and visit our online store for more services, specials, gift cards and ideas, products and exclusive offers.">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1380371102.jpg" class="motion-blur-up lazy-load lax" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self" alt="Treat yourself or your friends and family and visit our online store for more services, specials, gift cards and ideas, products and exclusive offers.">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -128,19 +128,77 @@ assets: assets/
 
 
 </section>
+<!-- // SECTION: HUB -->
+
+
+
+
+
+<!-- SECTION: WELCOME -->
+<section class="margin-top-none-mobile-both padding-top-lg center-auto width-75">
+
+
+	<!-- CELL -->
+	<div class="position-absolute position-relative-mobile-to-tablet-both right bottom width-50 width-100-mobile-to-laptop text-block io bring-to-front">
+
+
+		<!-- COPY -->
+		<h1 class="headline io-headline">
+			<span class="headline-subtitle">Welcome to</span>
+			<span class="headline-title">Marotta Medspa</span>
+		</h1>
+
+		<p class="drop-cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!-- // COPY -->
+
+
+	</div>
+	<!-- // CELL -->
+
+
+	<!-- CELL -->
+	<div class="lazy lax" data-lax-translate-x="0 0, vh -100 | loop=0 offset=0 speed=1" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self">
+
+
+		<!-- PHOTO -->
+		<picture>
+			<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1154140162.webp">
+			<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1154140162.jpg" class="center-auto lazy-load" alt="Welcome to Marotta Medspa.">
+		</picture>
+		<!-- PHOTO -->
+
+
+		{{> block-cap-bottom}}
+
+
+	</div>
+	<!-- // CELL -->
+
+
+	<!-- ELEMENT-->
+	<!--<div class="element-parallax lazy-load on-scroll-animate hide" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1154140162.jpg )" data-when="span" data-from="0.5" data-to="0" data-translatey="50" data-easing="linear"></div>-->
+	<!-- // ELEMENT -->
+
+
+	<!-- SCROLLING TEXT -->
+	<div class="element-large-text element-large-text-outline top left lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">Welcome</div>
+	<!-- // SCROLLING TEXT -->
+
+
+</section>
 <!-- // SECTION: WELCOME -->
 
 
 
 
 
-<!-- SECTION: PROCEDURES -->
-<section id="procedures" class="margin-top-lg-mobile-both padding-top-lg padding-top-none-mobile-both io on-scroll">
+<!-- SECTION: TREATMENTS -->
+<section id="treatments">
 
 
 	<!-- HEADER -->
 	<h1 class="headline text-center io-headline">
-		<span class="headline-title">Procedures</span>
+		<span class="headline-title">Treatments</span>
 		<span class="headline-subtitle"></span>
 	</h1>
 	<!-- // HEADER -->
@@ -165,13 +223,13 @@ assets: assets/
 
 			<!-- IMAGE -->	
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1096977386.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1096977386.jpg" class="motion-blur-active lazy-load" alt="Marotta Plastic Surgery Specialists offer a range of facial rejuvenation procedures and enhancements to help patients achieve their most desired appearance.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_786330916.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_786330916.jpg" class="motion-blur-active lazy-load" alt="Marotta Plastic Surgery Specialists offer a range of facial rejuvenation procedures and enhancements to help patients achieve their most desired appearance.">
 			</picture>
 
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1096977395.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1096977395.jpg" class="motion-blur-up lazy-load" alt="Marotta Plastic Surgery Specialists offer a range of facial rejuvenation procedures and enhancements to help patients achieve their most desired appearance.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_786330940.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_786330940.jpg" class="motion-blur-up lazy-load lax" alt="Marotta Plastic Surgery Specialists offer a range of facial rejuvenation procedures and enhancements to help patients achieve their most desired appearance." data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -198,13 +256,13 @@ assets: assets/
 
 			<!-- IMAGE -->
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_64632571.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_64632571.jpg" class="motion-blur-active lazy-load" alt="At Marotta Plastic Surgery Specialists, we offer a range of body procedures that are safe and effective, to help you obtain the body of your dreams.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1078337348.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1078337348.jpg" class="motion-blur-active lazy-load" alt="At Marotta Plastic Surgery Specialists, we offer a range of body procedures that are safe and effective, to help you obtain the body of your dreams.">
 			</picture>
 
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_545341216.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_545341216.jpg" class="motion-blur-up lazy-load" alt="At Marotta Plastic Surgery Specialists, we offer a range of body procedures that are safe and effective, to help you obtain the body of your dreams.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1042026859.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1042026859.jpg" class="motion-blur-up lazy-load lax" alt="At Marotta Plastic Surgery Specialists, we offer a range of body procedures that are safe and effective, to help you obtain the body of your dreams." data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -231,13 +289,13 @@ assets: assets/
 
 			<!-- IMAGE -->
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_207933373.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_207933373.jpg" class="motion-blur-active lazy-load" alt="At Marotta MedSpa, we strive to provide excellent service and products to meet our client’s skin care needs.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1022176051.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1022176051.jpg" class="motion-blur-active lazy-load" alt="At Marotta MedSpa, we strive to provide excellent service and products to meet our client’s skin care needs.">
 			</picture>
 
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_97029038.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_97029038.jpg" class="motion-blur-up lazy-load" alt="At Marotta MedSpa, we strive to provide excellent service and products to meet our client’s skin care needs.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1022176048.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1022176048.jpg" class="motion-blur-up lazy-load lax" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self" alt="At Marotta MedSpa, we strive to provide excellent service and products to meet our client’s skin care needs.">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -264,13 +322,13 @@ assets: assets/
 
 			<!-- IMAGE -->
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_444616567.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_444616567.jpg" class="motion-blur-active lazy-load" alt="Hair looking thinner? Regain those younger looking years.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1427931443.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1427931443.jpg" class="motion-blur-active lazy-load" alt="Hair looking thinner? Regain those younger looking years.">
 			</picture>
 
 			<picture>
-				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_444616594.webp">
-				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_444616594.jpg" class="motion-blur-up lazy-load" alt="Hair looking thinner? Regain those younger looking years.">
+				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_1441433435.webp">
+				<img data-src="{{ root }}{{ assets }}placeholder/shutterstock_1441433435.jpg" class="motion-blur-up lazy-load lax" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self" alt="Hair looking thinner? Regain those younger looking years.">
 			</picture>
 			<!-- // IMAGE -->
 
@@ -300,36 +358,27 @@ assets: assets/
 
 
 	<!-- SCROLLING TEXT -->
-	<div class="element position-absolute top right opacity-3 on-scroll">
-
-		<div class="element-large-text element-large-text element-large-text-outline text-vertical-lr hide-mobile-portrait on-scroll-animate" data-when="span" data-from="0.75" data-to="0" data-translatey="50" data-easing="linear">Procedures</div>
-
-	</div>
+	<div class="element-large-text element-large-text-outline top right lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">Treatments</div>
 	<!-- // SCROLLING TEXT -->
 
 
-	<!-- STRIP -->
-	<div class="position-absolute top right width-100 height-full origin-right on-scroll-animate send-to-back hide" data-from="0.75" data-to="0" data-scalex="0" data-easing="linear" data-background-color="#ddefff"></div>
-	<!-- // STRIP -->
-
-
 </section>
-<!-- // SECTION: PROCEDURES -->
+<!-- // SECTION: TREATMENTS -->
 
 
 
 
 
 <!-- SECTION: WHO WE ARE: DR. JAMES MAROTTA -->
-<section id="who-we-are" class="margin-bottom-none-mobile-to-laptop-both on-scroll">
+<section id="who-we-are" class="margin-bottom-none-mobile-to-laptop-both">
 
 
 	<!-- DR. JAMES MAROTTA -->
-	<div class="grid-x right-auto width-75 width-100-mobile-to-laptop">
+	<div class="grid-x medium-up-2 large-up-2 center-auto width-75 width-100-mobile-to-laptop">
 
 
 		<!-- CELL -->
-		<div class="cell medium-7 large-5 small-order-2 medium-order-2 large-order-1 align-self-bottom text-block io">
+		<div class="cell small-order-2 medium-order-2 large-order-1 align-self-bottom text-block io">
 
 
 			<!-- COPY -->
@@ -375,7 +424,7 @@ assets: assets/
 
 
 		<!-- CELL -->
-		<div class="cell medium-5 large-7 small-order-1 medium-order-1 large-order-2 align-self-top lazy">
+		<div class="cell small-order-1 medium-order-1 large-order-2 align-self-top lazy lax" data-lax-grayscale="0 0, vh 50 | loop=0 offset=0 speed=1" data-lax-anchor="self">
 
 
 			<!-- PHOTO -->
@@ -398,17 +447,8 @@ assets: assets/
 
 
 	<!-- SCROLLING TEXT -->
-	<div class="element position-absolute top left opacity-3 on-scroll">
-
-		<div class="element-large-text element-large-text element-large-text-outline text-vertical-lr hide-mobile-portrait on-scroll-animate" data-when="span" data-from="0" data-to="0.75" data-translatey="50" data-easing="linear">Who we are</div>
-
-	</div>
+	<div class="element-large-text element-large-text-outline top left lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">About</div>
 	<!-- // SCROLLING TEXT -->
-
-
-	<!-- ELEMENT-->
-	<div class="element-parallax background-left width-75 lazy-load on-scroll-animate" style="top: -8em; left: 0;" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1154140162.jpg )" data-when="span" data-from="0.5" data-to="0" data-translatey="50" data-easing="linear"></div>
-	<!-- // ELEMENT -->
 
 
 </section>
@@ -418,34 +458,32 @@ assets: assets/
 
 
 
-<!-- SECTION: EXPERTISE, INNVATION, COMPASSION, CARE -->
-<section class="margin-tb-none no-gutter no-width on-scroll">
+<!-- SECTION: EXPERTISE, INNOVATION, COMPASSION, CARE -->
+<section class="margin-tb-none no-gutter no-width">
 
 
 	<!-- GRID -->
-	<div class="left-auto width-75 width-100-mobile on-scroll">
+	<div class="left-auto">
 
 
 		<!-- BILLBOARD -->	
-		<div class="element-billboard on-scroll on-scroll-animate" data-when="span" data-from="0.5" data-to="0" data-translatex="-100" data-easing="linear">
+		<div class="element-billboard lax" data-lax-translate-x="0 0, vh -1024 | loop=0 offset=-200 speed=1" data-lax-grayscale="0 0, vh 100 | loop=0 offset=-200 speed=1" data-lax-anchor="self">
 
 
 			<!-- IMAGES -->
-			<div class="element-billboard-card round-left-none-desktop lazy-load hide-tablet-portrait" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1016757307.jpg )"></div>
-			<div class="element-billboard-card background-bottom lazy-load round-left-none-tablet-portrait hide-mobile-landscape" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1052759390.jpg )"></div>
-			<div class="element-billboard-card lazy-load hide-mobile-both" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1115157008.jpg )">
-				{{> block-cap-bottom}}
-			</div>
+			<div class="element-billboard-card lazy-load hide-tablet-portrait hide-mobile-landscape" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1016757307.jpg )"></div>
+			<!--<div class="element-billboard-card background-bottom round-left-none-tablet-portrait lazy-load hide-mobile-landscape" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1052759390.jpg )"></div>-->
+			<div class="element-billboard-card lazy-load" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1115157008.jpg )">{{> block-cap-bottom}}</div>
 			<!-- // IMAGES -->
 
 
 			<!-- SCROLLING TEXT -->	
-			<div class="position-absolute position-relative-mobile right on-scroll hide-mobile-portrait" style="bottom: 0">
+			<div class="position-relative hide-mobile-portrait">
 
-				<div class="headline margin-bottom-none on-scroll-animate" data-when="span" data-from="0.25" data-to="0" data-translatex="-10" data-easing="linear">Expertise.</div>
-				<div class="headline margin-bottom-none on-scroll-animate" data-when="span" data-from="0.5" data-to="0" data-translatex="10" data-easing="linear">Innovation.</div>
-				<div class="headline margin-bottom-none on-scroll-animate" data-when="span" data-from="0.75" data-to="0" data-translatex="-10" data-easing="linear">Compassion.</div>
-				<div class="headline margin-bottom-none on-scroll-animate" data-when="span" data-from="1" data-to="0" data-translatex="10" data-easing="linear">Care.</div>
+				<div class="headline margin-bottom-none lax" data-lax-translate-x="0 0, vh -100 | loop=0 offset=-200 speed=1" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self" data-color="#13b5b2">Expertise.</div>
+				<div class="headline margin-bottom-none lax" data-lax-translate-x="0 0, vh 100 | loop=0 offset=-200 speed=1" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self" data-color="#13b5b2">Innovation.</div>
+				<div class="headline margin-bottom-none lax" data-lax-translate-x="0 0, vh -100 | loop=0 offset=-200 speed=1" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self" data-color="#13b5b2">Compassion.</div>
+				<div class="headline margin-bottom-none lax" data-lax-translate-x="0 0, vh 100 | loop=0 offset=-200 speed=1" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self" data-color="#13b5b2">Care.</div>
 
 			</div>
 			<!-- // SCROLLING TEXT -->
@@ -460,17 +498,12 @@ assets: assets/
 
 
 	<!-- FLORAL -->
-	<div class="flora on-scroll" style="top: 8em; right: 0;">
+	<div class="flora" style="top: 8em; right: 0;">
 
 		{{> flora-01}}
 		
 	</div>
 	<!-- // FLORAL -->
-
-
-	<!-- STRIP -->
-	<div class="position-absolute top right width-100 height-full origin-right on-scroll-animate send-to-back hide" data-from="0.75" data-to="0" data-scalex="0" data-easing="linear" data-background-color="#ddefff"></div>
-	<!-- // STRIP -->
 
 
 </section>
@@ -481,15 +514,15 @@ assets: assets/
 
 
 <!-- SECTION: WHO WE ARE: DR. JAMES SHERIDAN -->
-<section class="margin-top-none-mobile-portrait on-scroll">
+<section class="margin-top-none-mobile-to-laptop-both">
 
 
 	<!-- DR. JAMES SHERIDAN -->
-	<div class="grid-x left-auto width-75 width-100-mobile-to-laptop">
+	<div class="grid-x medium-up-2 large-up-2 center-auto width-75 width-100-mobile-to-laptop">
 
 
 		<!-- CELL -->
-		<div class="cell medium-5 large-7 align-self-top lazy">
+		<div class="cell align-self-top lazy lax" data-lax-grayscale="0 0, vh 50 | loop=0 offset=0 speed=1" data-lax-anchor="self">
 
 
 			<!-- PHOTO -->
@@ -508,7 +541,7 @@ assets: assets/
 
 
 		<!-- CELL -->
-		<div class="cell medium-7 large-5 align-self-bottom text-block io">
+		<div class="cell align-self-bottom text-block io">
 
 
 			<!-- COPY -->
@@ -555,11 +588,6 @@ assets: assets/
 	<!-- // DR. JAMES SHERIDAN -->
 
 
-	<!-- ELEMENT-->
-	<div class="element-parallax background-right lazy-load on-scroll-animate" style="top: -8em; right: 0;" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_1389465362.jpg )" data-when="span" data-from="0.5" data-to="0" data-translatey="50" data-easing="linear"></div>
-	<!-- // ELEMENT -->
-
-
 </section>
 <!-- // SECTION: WHO WE ARE: DR. JAMES SHERIDAN -->
 
@@ -568,7 +596,7 @@ assets: assets/
 
 
 <!-- SECTION: TESTIMONIALS -->
-<section id="testimonials" class="io on-scroll">
+<section id="testimonials" class="io">
 
 
 	<!-- HEADER -->
@@ -660,7 +688,7 @@ assets: assets/
 				<span class="fas fa-star"></span>
 				<span class="fas fa-star"></span>
 				<span class="fas fa-star"></span>
-				<span class="fas fa-star-half"></span>
+				<span class="fas fa-star-half-alt"></span>
 			</div>
 
 		</li>
@@ -684,17 +712,8 @@ assets: assets/
 
 
 	<!-- SCROLLING TEXT -->
-	<div class="element position-absolute top right opacity-3 on-scroll">
-
-		<div class="element-large-text element-large-text element-large-text-outline text-vertical-lr hide-mobile-portrait on-scroll-animate" data-when="span" data-from="0" data-to="0.75" data-translatey="50" data-easing="linear">Reviews</div>
-
-	</div>
+	<div class="element-large-text element-large-text-outline top right lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">Reviews</div>
 	<!-- // SCROLLING TEXT -->
-
-
-	<!-- STRIP -->
-	<div class="position-absolute top right width-100 height-full origin-right on-scroll-animate hide" data-from="0.75" data-to="0" data-scalex="0" data-easing="linear" data-background-color="#ddefff"></div>
-	<!-- // STRIP -->
 
 
 </section>
@@ -705,7 +724,7 @@ assets: assets/
 
 
 <!-- SECTION: GALLERY -->
-<section id="gallery" class="grid-x align-middle align-center margin-bottom-none-mobile-portrait on-scroll">
+<section id="gallery" class="grid-x align-middle align-center margin-bottom-none-mobile-portrait">
 
 
 	<!-- CELL -->
@@ -736,11 +755,19 @@ assets: assets/
 
 
 	<!-- PHOTOS -->
-	<div class="cell position-absolute left width-100 height-full hide-mobile-both" style="top: -5em;">
+	<div class="cell position-absolute left width-100 height-full hide-mobile-both">
 
 
 		<!-- PHOTO -->
-		<div class="element-photo lazy on-scroll-animate" data-random="position" data-when="span" data-from="1" data-to="0" data-translatey="-50" data-rotatez="-16" data-blur="10" data-easing="easeout">
+		<div class="element-photo lazy lax"
+		data-random="position"
+		data-lax-translate-y="0 0, vh -300 | loop=0 offset=0 speed=1"
+		data-lax-scale-x="0 1, vh 0.75 | loop=0 offset=0 speed=1"
+		data-lax-scale-y="0 1, vh 0.5 | loop=0 offset=0 speed=1"
+		data-lax-skew-x="0 1, vh 0.75 | loop=0 offset=0 speed=1"
+		data-lax-rotate="0 0, vh 36 | loop=0 offset=0 speed=1"
+		data-lax-blur="0 0, vh 10 | loop=0 offset=-200 speed=1"
+		data-lax-anchor="self">
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_439160518.webp">
@@ -752,7 +779,14 @@ assets: assets/
 
 
 		<!-- PHOTO -->
-		<div class="element-photo lazy on-scroll-animate" data-random="position" data-when="span" data-from="0.75" data-to="0" data-translatey="50" data-rotatez="24" data-blur="10" data-easing="easeout">
+		<div class="element-photo lazy lax" data-random="position"
+		data-lax-translate-y="0 0, vh -300 | loop=0 offset=0 speed=1"
+		data-lax-scale-x="0 1, vh 0.5 | loop=0 offset=0 speed=1"
+		data-lax-scale-y="0 1, vh 0.25 | loop=0 offset=0 speed=1"
+		data-lax-skew-x="0 1, vh -0.5 | loop=0 offset=0 speed=1"
+		data-lax-rotate="0 0, vh -36 | loop=0 offset=0 speed=1"
+		data-lax-blur="0 0, vh 10 | loop=0 offset=-200 speed=1"
+		data-lax-anchor="self">
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_325895336.webp">
@@ -764,7 +798,14 @@ assets: assets/
 
 
 		<!-- PHOTO -->
-		<div class="element-photo lazy on-scroll-animate" data-random="position" data-when="span" data-from="0.5" data-to="0" data-translatey="25" data-rotatez="-24" data-blur="10" data-easing="easeout">
+		<div class="element-photo lazy lax"
+		data-lax-translate-y="0 0, vh -300 | loop=0 offset=0 speed=1"
+		data-lax-scale-x="0 1, vh 0.75 | loop=0 offset=0 speed=1"
+		data-lax-scale-y="0 1, vh 0.5 | loop=0 offset=0 speed=1"
+		data-lax-skew-x="0 1, vh 0.25 | loop=0 offset=0 speed=1"
+		data-lax-rotate="0 0, vh -36 | loop=0 offset=0 speed=1"
+		data-lax-blur="0 0, vh 10 | loop=0 offset=-200 speed=1"
+		data-lax-anchor="self">
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_191546813.webp">
@@ -776,7 +817,14 @@ assets: assets/
 
 
 		<!-- PHOTO -->
-		<div class="element-photo lazy on-scroll-animate hide-tablet-both" data-random="position" data-when="span" data-from="1" data-to="0" data-translatey="-25" data-rotatez="16" data-blur="10" data-easing="easeout">
+		<div class="element-photo lazy lax hide-tablet-both"
+		data-lax-translate-y="0 0, vh -300 | loop=0 offset=0 speed=1"
+		data-lax-scale-x="0 1, vh 0.75 | loop=0 offset=0 speed=1"
+		data-lax-scale-y="0 1, vh 0.5 | loop=0 offset=0 speed=1"
+		data-lax-skew-x="0 1, vh 0.75 | loop=0 offset=0 speed=1"
+		data-lax-rotate="0 0, vh 36 | loop=0 offset=0 speed=1"
+		data-lax-blur="0 0, vh 10 | loop=0 offset=-200 speed=1"
+		data-lax-anchor="self">
 
 			<picture>
 				<source type="image/webp" data-srcset="{{ root }}{{ assets }}placeholder/shutterstock_207933373.webp">
@@ -792,11 +840,7 @@ assets: assets/
 
 
 	<!-- SCROLLING TEXT -->
-	<div class="element position-absolute top left opacity-3 on-scroll">
-
-		<div class="element-large-text element-large-text element-large-text-outline text-vertical-lr hide-mobile-portrait on-scroll-animate" data-when="span" data-from="0" data-to="0.75" data-translatey="50" data-easing="linear">Gallery</div>
-
-	</div>
+	<div class="element-large-text element-large-text-outline top left lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">Gallery</div>
 	<!-- // SCROLLING TEXT -->
 
 
@@ -808,7 +852,7 @@ assets: assets/
 
 
 <!-- SECTION: TREAT YOURSELF -->
-<section id="treat-your-self" class="margin-bottom-lg margin-top-none-mobile-both no-gutter no-width on-scroll">
+<section id="treat-your-self" class="margin-bottom-lg margin-top-none-mobile-both no-gutter no-width">
 
 
 	<!-- GRID -->
@@ -843,7 +887,7 @@ assets: assets/
 
 
 		<!-- CELL -->	
-		<div class="cell large-8 small-order-1 medium-order-2 large-order-2 element-billboard on-scroll on-scroll-animate" data-when="span" data-from="0.75" data-to="0" data-translatex="100" data-easing="linear">
+		<div class="cell large-8 small-order-1 medium-order-2 large-order-2 element-billboard lax" data-lax-translate-x="0 0, vh 1024 | loop=0 offset=0 speed=1" data-lax-grayscale="0 0, vh 100 | loop=0 offset=0 speed=1" data-lax-anchor="self">
 
 			<div class="element-billboard-card background-bottom lazy-load" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_573193858.jpg )"></div>
 			<div class="element-billboard-card round-right-none lazy-load" data-bg="url( {{ root }}{{ assets }}placeholder/shutterstock_318602609.jpg )"></div>
@@ -857,26 +901,17 @@ assets: assets/
 
 
 	<!-- SCROLLING TEXT -->
-	<div class="element position-absolute top right opacity-3 on-scroll">
-
-		<div class="element-large-text element-large-text element-large-text-outline text-vertical-lr hide-mobile-portrait on-scroll-animate" data-when="span" data-from="0" data-to="0.75" data-translatey="50" data-easing="linear">Treat yourself!</div>
-
-	</div>
+	<div class="element-large-text element-large-text-outline top right lax" data-lax-opacity="0 1, vh 0 | loop=0 offset=0 speed=1" data-lax-anchor="self">Treat yourself</div>
 	<!-- // SCROLLING TEXT -->
 
 
 	<!-- FLORAL -->
-	<div class="flora on-scroll" style="top: 0; left: 0;">
+	<div class="flora top left">
 
 		{{> flora-02}}
 
 	</div>
 	<!-- // FLORAL -->
-
-
-	<!-- STRIP -->
-	<div class="position-absolute top right width-full height-full origin-bottom on-scroll-animate hide send-to-back" data-from="0.75" data-to="0" data-scaley="0" data-easing="linear" data-color="#333"></div>
-	<!-- // STRIP -->
 
 
 </section>

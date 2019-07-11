@@ -19,8 +19,8 @@ $card-theme-options: (
 	translatex-amount: 0,
 	translatey-amount: 0,
 	scale-amount: 1,
-	truncate: false,
-	duration: 250ms,
+
+	duration: 200ms,
 	delay: 0,
 	ease: $easeNatural
 );
@@ -33,12 +33,12 @@ $card-theme-options: (
 
 	@include shadow(
 		$type: 'box-shadow',
-		$color: map-get($card-theme-options, drop-shadow-color),
+		$color: map-get($card-options, drop-shadow-color),
 		$x: 0,
 		$y: 0,
 		$blur: 0,
 		$spread: 0,
-		$alpha: 0.15,
+		$alpha: 0,
 		$strength: 0, 
 		$inset: false
 	);
@@ -54,7 +54,6 @@ $card-theme-options: (
 	position: relative;
 	width: 25%;
 	max-width: map-get($card-theme-options, width);
-	//height: auto;
 	height: map-get($card-theme-options, height);
 	border-radius: map-get($card-theme-options, radius);
 	border: thin solid map-get($card-theme-options, border-color);
@@ -167,12 +166,8 @@ $card-theme-options: (
 
 	}
 
-	@include break($min: $mobile, $max: $tablet, $orientation: '') {
-		height: 275px;
-	}
-
-	@include break($min: 0, $max: $mobile, $orientation: 'both') {
-		height: 200px;
+	@include break($min: $mobile, $max: $tablet, $orientation: 'portrait') {
+		height: 350px;
 	}
 
 }

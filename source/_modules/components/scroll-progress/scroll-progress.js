@@ -79,13 +79,14 @@ var scrollProgress = (function scrollProgress($, window, document, undefined) {
 		}
 
 
+		update();
+
+
 		/* -------------------------------------------------- */
 		/* LISTENERS
 		/* -------------------------------------------------- */
 
 		$win.on('scroll', _.throttle(update, interval.update, { leading: interval.leading, trailing: interval.trailing } ));
-
-		update();
 
 	}
 

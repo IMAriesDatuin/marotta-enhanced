@@ -26,9 +26,9 @@ $card-options: (
 	radius: 6px,
 	translatex-amount: 0,
 	translatey-amount: -10px,
-	scale-amount: 1.05,
-	truncate: false,
-	duration: 250ms,
+	scale-amount: 1,
+	
+	duration: 200ms,
 	delay: 0,
 	ease: $easeNatural
 );
@@ -44,7 +44,7 @@ $card-options: (
 		$color: map-get($card-options, drop-shadow-color),
 		$x: 0,
 		$y: 4px,
-		$blur: 24px,
+		$blur: 16px,
 		$spread: 0,
 		$alpha: 0.15,
 		$strength: 0, 
@@ -62,7 +62,6 @@ $card-options: (
 	position: relative;
 	width: 25%;
 	max-width: map-get($card-options, width);
-	//height: auto;
 	height: map-get($card-options, height);
 	border-radius: map-get($card-options, radius);
 	border: thin solid map-get($card-options, border-color);
@@ -184,18 +183,16 @@ $card-options: (
 
 	}
 
-	@include break($min: $mobile, $max: $tablet, $orientation: '') {
+	@include break($min: $mobile, $max: $tablet, $orientation: 'portrait') {
 		height: 275px;
 	}
 
-	@include break($min: 0, $max: $mobile, $orientation: 'both') {
-		width: 100%;
-		max-width: 100%;
-		height: 150px;
+	@include break($min: 0, $max: $mobile, $orientation: 'portrait') {
+		height: 200px;
 	}
 
 	@include break($min: 0, $max: $mobile, $orientation: 'landscape') {
-		height: 150px;
+		height: 400px;
 	}
 
 }

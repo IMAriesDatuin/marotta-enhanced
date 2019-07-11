@@ -58,6 +58,6 @@
 .force-gpu {
 	backface-visibility: hidden;
 	perspective: 1000;
-	transform: translate3d(0,0,0) translateZ(0);
+	transform: translateZ(0);
 	will-change: transform;
 }

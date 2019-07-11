@@ -30,10 +30,10 @@ var isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > -1,
 
 
 // SCREEN SIZES
-var isMobileScreen = window.matchMedia('(min-width: 320px) and (max-width: 667px)').matches,
-	isTabletScreen = window.matchMedia('(min-width: 668px) and (max-width: 1024px)').matches,
-	isLaptopScreen = window.matchMedia('(min-width: 769px) and (max-width: 1024px)').matches,
-	isDesktopScreen = window.matchMedia('(min-width: 1025px)').matches;
+var isMobileScreen = window.matchMedia('(min-width: 0) and (max-width: 667px)').matches,
+	isTabletScreen = window.matchMedia('(min-width: 668px) and (max-width: 768px)').matches,
+	isLaptopScreen = window.matchMedia('(min-width: 769px) and (max-width: 1366px)').matches,
+	isDesktopScreen = window.matchMedia('(min-width: 2460px)').matches;
 
 
 // CACHE

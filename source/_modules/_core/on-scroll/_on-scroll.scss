@@ -26,39 +26,3 @@ $on-scroll-options: (
 	}
 
 }
-
-
-// MODIFIERS
-.on-scroll {
-
-	$self: &;
-
-	&.is-ready {
-
-	}
-
-	&.is-top {
-
-	}
-
-	&.is-not-top {
-	
-	}
-
-	&.is-bottom {
-
-	}
-
-	&.is-not-bottom {
-
-	}
-
-	&.is-scrolling-up {
-
-	}
-
-	&.is-scrolling-down {
-
-	}
-
-}

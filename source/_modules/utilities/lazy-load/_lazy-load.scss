@@ -19,11 +19,11 @@ $lazy-load-options: (
 
 	&::before {
 		@include transition(
-			$property: (background, transform),
+			$property: (all),
 			$duration: map-get($lazy-load-options, duration),
 			$delay: map-get($lazy-load-options, delay),
 			$ease: map-get($lazy-load-options, ease),
-			$optimize: true
+			$optimize: false
 		);
 		content: '';
 		z-index: 1;
@@ -73,7 +73,7 @@ img.lazy-load {
 	//transform: scale3d(1.25,1.25,1);
 	transform-origin: center center;
 	//transform-style: preserve-3d;
-	filter: blur(8px);
+	filter: blur(4px);
 	//filter: url("#svg-filter-glitch");
 
 	&.is-loaded,
@@ -128,6 +128,11 @@ div.lazy-load:not(img):not(video) {
 
 
 // HACKS (YUCK)
+/* Prevents img without src to appear */
+img:not([src]) {
+	visibility: hidden;
+}
+
 /* IE Edge fix for IntersectionObserver. */
 img[data-src],
 img[data-srcset] {

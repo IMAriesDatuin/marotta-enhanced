@@ -81,7 +81,15 @@ $hero-options: (
 			width: 100%;
 			max-width: 50%;
 
-			@include break($min: $mobile, $max: $laptop, $orientation: 'both') {
+			@include break($min: $tablet, $max: $laptop, $orientation: 'portrait') {
+				max-width: 90%;
+			}
+
+			@include break($min: $tablet, $max: $laptop, $orientation: 'landscape') {
+				max-width: 60%;
+			}
+
+			@include break($min: $mobile, $max: $tablet, $orientation: 'both') {
 				max-width: 100%;
 			}
 
@@ -213,7 +221,7 @@ $hero-options: (
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba($black, 0.5);
+		background: rgba($black, 1);
 	}
 
 	&-media {

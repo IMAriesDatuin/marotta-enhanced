@@ -5,9 +5,9 @@
 // OPTIONS
 $io-options: (
 	background-color: $white,
-	duration: 400ms, // Set the duration of the animation.
-	delay: 0, // Delay the animation by this amount. 
-	ease: $easeWipe // Set the easing type for this animation.
+	duration: 400ms,
+	delay: 0,
+	ease: $easeWipe
 );
 
 
@@ -25,18 +25,20 @@ $io-options: (
 
 		.split-text {
 
+			/*
 			@include transition(
 				$property: (filter),
 				$duration: map-get($io-options, duration),
 				$delay: map-get($io-options, delay),
 				$ease: map-get($io-options, ease),
-				$optimize: true
+				$optimize: false
 			);
+			*/
 			overflow: hidden;
-			filter: blur(6px);
+			//filter: blur(6px);
 
 			&#{$self}-headline-reveal {
-				filter: blur(0);			
+				//filter: blur(0);			
 			}
 
 		}
@@ -51,7 +53,7 @@ $io-options: (
 					$duration: map-get($io-options, duration),
 					$delay: map-get($io-options, delay),
 					$ease: map-get($io-options, ease),
-					$optimize: true
+					$optimize: false
 			);
 			*/
 
@@ -61,7 +63,7 @@ $io-options: (
 					$duration: map-get($io-options, duration),
 					$delay: map-get($io-options, delay),
 					$ease: map-get($io-options, ease),
-					$optimize: true
+					$optimize: false
 				);
 				content: '';
 				z-index: 1;
@@ -74,7 +76,6 @@ $io-options: (
 				background: $black;
 				transform: scale3d(1,1,1);
 				transform-origin: left center;
-				will-change: transform;
 			}
 
 			&#{$self}-headline-reveal {
@@ -99,6 +100,7 @@ $io-options: (
 
 		.split-text {
 
+			/*
 			@include transition(
 				$property: (filter),
 				$duration: map-get($io-options, duration),
@@ -107,9 +109,10 @@ $io-options: (
 				$optimize: true
 			);
 			filter: blur(4px);
+			*/
 
 			&#{$self}-copy-reveal {
-				filter: blur(0);			
+				//filter: blur(0);			
 			}
 
 		}
@@ -121,18 +124,18 @@ $io-options: (
 		li {
 
 			@include transition(
-					$property: (color, border, background, box-shadow, transform, filter),
+					$property: (color, border, background, box-shadow, transform),
 					$duration: map-get($io-options, duration),
 					$delay: map-get($io-options, delay),
 					$ease: map-get($io-options, ease),
-					$optimize: true
+					$optimize: false
 			);
 			//color: $black;
-			filter: blur(4px);
+			//filter: blur(4px);
 
 			&#{$self}-list-reveal {
-				color: $white;
-				filter: blur(0);
+				//color: $white;
+				//filter: blur(0);
 			}
 
 		}
@@ -147,7 +150,7 @@ $io-options: (
 				$duration: map-get($io-options, duration) * 2,
 				$delay: map-get($io-options, delay),
 				$ease: map-get($io-options, ease),
-				$optimize: true
+				$optimize: false
 			);
 			content: '';
 			z-index: 2;
@@ -159,7 +162,6 @@ $io-options: (
 			background: map-get($io-options, background-color);
 			transform: scale3d(1,1,1);
 			transform-origin: top center;
-			will-change: transform;
 		}
 
 		&-reveal {

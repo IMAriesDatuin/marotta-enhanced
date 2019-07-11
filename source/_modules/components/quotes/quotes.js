@@ -81,9 +81,9 @@ var quotes = (function quotes($, window, document, undefined) {
 
 			// TIMELINE
 			var tl = new Timeline({paused: true});
-				tl.staggerTo($mySplitText, 0.25, {autoAlpha: 0, y: 10, className: '-=split-text-reveal', ease: Expo.easeOut}, 0)
-				  .staggerTo($mySplitText, duration, {autoAlpha: 1, y: 0, className: '+=split-text-reveal', ease: Expo.easeOut}, stagger)
-				  .staggerTo($mySplitText, duration, {autoAlpha: 0, y: 10, className: '-=split-text-reveal', ease: Expo.easeInOut}, stagger, '+=' + pause)
+				tl.staggerTo($mySplitText, 0.25, {autoAlpha: 0, className: '-=split-text-reveal', ease: Expo.easeOut}, 0)
+				  .staggerTo($mySplitText, duration, {autoAlpha: 1, className: '+=split-text-reveal', ease: Expo.easeOut}, stagger)
+				  .staggerTo($mySplitText, duration, {autoAlpha: 0, className: '-=split-text-reveal', ease: Expo.easeInOut}, stagger, '+=' + pause)
 
 				  //call a function to trigger the next timeline	 
 				  .add(nextTimeline, '-=' + overlap);

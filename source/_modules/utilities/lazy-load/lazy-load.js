@@ -41,7 +41,7 @@ var lazyLoad = (function lazyLoad($, window, document, undefined) {
 		var options = {
 			container: document,
 			elements_selector: $element,
-			threshold: 500,
+			threshold: 600,
 			//thresholds: '0% 0% 0% 0%', // top, right, bottom, left
 			load_delay: 0,
 			auto_unobserve: true,
