@@ -47,7 +47,7 @@ var randomProps = (function randomProps($, window, document, undefined) {
 
 	}
 
-	$win.on('resize', _.throttle(position, 250, { leading: interval.leading, trailing: interval.trailing } ));
+	//$win.on('resize', _.throttle(position, 250, { leading: interval.leading, trailing: interval.trailing } ));
 
 	
 	/* -------------------------------------------------- */

@@ -732,7 +732,7 @@ self.__precacheManifest = [
   },
   {
     "url": "error.html",
-    "revision": "835567acd010eadc4682893d9a5c1e18"
+    "revision": "810b0a9ee0bb12ebcc6149228e7339c3"
   },
   {
     "url": "favicon-16x16.png",
@@ -752,11 +752,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "0b43879309fb69d5b9e3c3b80203de58"
+    "revision": "c0f2432dd468ff4a9bc8de62d3638bdb"
   },
   {
     "url": "legal.html",
-    "revision": "ed9ed0fbb811e025c66cabcc2fa6e489"
+    "revision": "2d811ce9495b5a2d4998c8d17df1c161"
   },
   {
     "url": "mstile-144x144.png",
@@ -807,8 +807,8 @@ self.__precacheManifest = [
     "revision": "788dd162a4b2b6611ad66a7c871ad99f"
   },
   {
-    "url": "scripts/b.564f706b2b.app.js",
-    "revision": "01dde8ee7874c93b6fe313b6980b6a51"
+    "url": "scripts/b.0e75cae249.app.js",
+    "revision": "ecdff331726448efbc5c0db9e1c3aecf"
   },
   {
     "url": "webfonts/fa-brands-400.eot",
