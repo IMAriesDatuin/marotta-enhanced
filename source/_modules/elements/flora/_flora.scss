@@ -20,12 +20,8 @@ $floral-options: (
 	max-width: 800px;
 	height: 100%;
 
-	@include break($min: 0, $max: $laptop, $orientation: 'portrait') {
-		max-width: 325px;
-	}
-
 	@include break($min: 0, $max: $laptop, $orientation: 'landscape') {
-		max-width: 400px;
+		max-width: 700px;
 	}
 
 	@include break($min: 0, $max: $mobile, $orientation: 'both') {

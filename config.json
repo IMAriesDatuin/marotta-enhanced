@@ -393,7 +393,7 @@
 						"_plugins/flickity/plugins/flickity-fade/flickity-fade.js",
 						">>_plugins/flickity/plugins/hash.js",
 
-						"_plugins/distortion.js",
+						">>_plugins/distortion.js",
 						">>_plugins/dzsparallaxer/dzsparallaxer.js",
 						"_plugins/waves/waves.js"
 				 	]
